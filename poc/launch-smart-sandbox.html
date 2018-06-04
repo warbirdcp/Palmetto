@@ -3,9 +3,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel='stylesheet' type='text/css' href='./src/css/example-smart-app.css'>
+    <link rel='stylesheet' type='text/css' href='./src/css/palmetto.css'>
     <link rel='stylesheet' type='text/css' href='./lib/css/cerner-smart-embeddable-lib-1.0.0.min.css'>
-    <title>Example-SMART-App</title>
+    <title>Palmetto Cerner FHIR PoC Implemenation</title>
   </head>
   <body>
     <!-- Required JS files to enable this page to embed within an MPage -->
@@ -20,7 +20,7 @@
     <script src='./lib/js/fhir-client-cerner-additions-1.0.0.js'></script>
     <script>
       FHIR.oauth2.authorize({
-        'client_id': 'df7c5a17-52dd-4c88-8a32-cdfb557ba758',
+        'client_id': 'YOUR-SMART-HEALTH-IT-CLIENT-ID-HERE',
         'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
       });
     </script>

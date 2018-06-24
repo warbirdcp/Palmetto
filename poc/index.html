@@ -88,9 +88,7 @@
       extractData().then(
         //Display Patient Demographics and Observations if extractData was success
         function(p) {
-          SendtoSP(p);
           drawVisualization(p);
-          SendtoSP(p);
         },
 
         //Display 'Failed to call FHIR Service' if extractData failed

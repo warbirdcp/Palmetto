@@ -160,7 +160,7 @@
   };
 function SendtoSP(p) {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "https://prod-17.eastus.logic.azure.com:443/workflows/fa6a29a7840e4486973df8d7656ad476/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=vCH3AZlNTgaMYr739qoXqot4gcSjeXFPE_dvraIkMuY", true);
+    xhttp.open("GET", "https://prod-17.eastus.logic.azure.com:443/workflows/fa6a29a7840e4486973df8d7656ad476/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=vCH3AZlNTgaMYr739qoXqot4gcSjeXFPE_dvraIkMuY", true);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send();
     var response = JSON.parse(xhttp.responseText);

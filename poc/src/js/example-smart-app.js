@@ -155,6 +155,8 @@
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
+    $('#ptotal').html(p);
+    
   };
 
 })(window);

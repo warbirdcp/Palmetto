@@ -9,7 +9,7 @@
   <body>
     
 <script type="text/javascript">
-    $(function() {
+    $(function apim() {
         var params = {
             // Request parameters
         };
@@ -117,6 +117,7 @@
         //Display Patient Demographics and Observations if extractData was success
         function(p) {
           drawVisualization(p);
+          apim();
         },
 
         //Display 'Failed to call FHIR Service' if extractData failed

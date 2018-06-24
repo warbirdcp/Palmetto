@@ -17511,7 +17511,6 @@ function FhirClient(p) {
     }
     
     var fhirAPI = (client.patient)?client.patient.api:client.api;
-     document.write(fhirAPI);
     client.userId = p.userId;
 
     server.auth = server.auth ||  {
